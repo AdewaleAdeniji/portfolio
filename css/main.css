@@ -8,7 +8,33 @@
         transform: rotate(359deg)
     }
 }
+div#navMenu {
+    background: #141c3a;
+}
 
+nav.navbar.is-transparent {
+    background: #141c3a;
+}
+.column.is-12-mobile {
+    width: 80vw !important;
+    /* padding-left: 10vw; */
+    margin-left: 10vh;
+    margin: 10vh;
+    height: 100vh !important;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.7);
+}nav.navbar.is-transparent {}
+
+.column.is-12-mobile figure {
+     width: 100% !important; 
+     height: 100% !important; 
+     padding: 0 !important; 
+}
+@media(max-width:768px){
+     .column.is-12-mobile {
+         margin:5vh;
+         height:50vh !important;
+     }
+}
 .delete,.modal-close,.is-unselectable,.button,.file,.breadcrumb,.pagination-previous,.pagination-next,.pagination-link,.pagination-ellipsis,.tabs {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -235,6 +261,7 @@ article,aside,figure,footer,header,hgroup,section {
 body,button,input,select,textarea {
     font-family: "europa",sans-serif
 }
+
 
 code,pre {
     -moz-osx-font-smoothing: auto;
@@ -11757,3 +11784,25 @@ input[name="carousel"] {
 }
 
 /*# sourceMappingURL=main.css.map */
+li.link {
+    color: #5cb;
+    font-family: eurostile;
+    letter-spacing: 1px;
+    margin: 1vh;
+    transition: .7s;
+    cursor: pointer;
+}
+
+li.link:hover {
+    color: #000;
+}
+/*.tag {
+opacity: 0;
+transform: translate(0, 10vh);
+transition: all 1s;
+}
+
+.tag.visible {
+opacity: 1;
+transform: translate(0, 0);
+}*/
